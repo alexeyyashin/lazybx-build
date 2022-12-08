@@ -1,0 +1,25 @@
+{
+  "root": ".",
+  "namespace": "MyRootNamespace",
+  "entity": {
+    "path": "{{root}}/lib/Entity",
+    "namespace": "{{namespace}}\\Entity",
+    "parent": "\\AbstractEntity"
+  },
+  "model": {
+    "path": "{{root}}/lib/Model",
+    "namespace": "{{namespace}}\\Model",
+    "parent": "\\AbstractModel"
+  },
+  "blueprint": {
+    "root": "{{root}}/blueprint",
+    "path": "{{blueprint.root}}/data",
+    "last": "{{blueprint.root}}/.last",
+    "parent": "\\AbstractBlueprint",
+    "fieldParent": "\\AbstractBlueprintField",
+    "autoloader": null,
+    "customTemplatePath": null
+  },
+  "trim": [],
+  "updateFrom": null
+}
