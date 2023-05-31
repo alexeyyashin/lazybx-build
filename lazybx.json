@@ -4,7 +4,8 @@
   "entity": {
     "path": "{{root}}/lib/Entity",
     "namespace": "{{namespace}}\\Entity",
-    "parent": "\\AbstractEntity"
+    "parent": "\\AbstractEntity",
+    "defaultCollection": "\\DefaultCollection"
   },
   "model": {
     "path": "{{root}}/lib/Model",
@@ -16,10 +17,17 @@
     "path": "{{blueprint.root}}/data",
     "last": "{{blueprint.root}}/.last",
     "parent": "\\AbstractBlueprint",
-    "fieldParent": "\\AbstractBlueprintField",
-    "autoloader": null,
+    "fieldParent": "\\AbstractFieldBlueprint",
+    "autoloader": "{{blueprint.root}}/path/to/autoloader.php",
     "customTemplatePath": null
   },
-  "trim": [],
-  "updateFrom": null
+  "meta": {
+    "generate": true,
+    "collection": {
+      "template": null,
+      "path": "{{root}}/meta/Collection",
+      "namespace": "{{namespace}}\\Meta\\Collection"
+    }
+  },
+  "trim": ["words", "to", "exclude", "during", "code", "generation"]
 }
