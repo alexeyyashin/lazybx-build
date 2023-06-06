@@ -15,7 +15,7 @@
   "blueprint": {
     "root": "{{root}}/blueprint",
     "path": "{{blueprint.root}}/data",
-    "last": "{{blueprint.root}}/.last",
+    "artifacts": "{{blueprint.root}}/artifacts",
     "parent": "\\AbstractBlueprint",
     "fieldParent": "\\AbstractFieldBlueprint",
     "autoloader": "{{blueprint.root}}/path/to/autoloader.php",
